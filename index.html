@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Magnetic - Boutique high-tech et accessoires connectés. Découvrez nos derniers produits : casques, montres, consoles."
+    />
+    <title>Magnetic | High-Tech Store</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="main-header" id="main-header">
+      <a href="#" class="main-header__logo logo">Magne<span>tic</span></a>
+
+      <nav class="main-header__nav">
+        <ul class="main-header__nav-list" id="menu-principal">
+          <li class="main-header__nav-item">
+            <a href="#hero" class="main-header__nav-link">Accueil</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a href="#produits" class="main-header__nav-link">Produits</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a href="#quality-section" class="main-header__nav-link"
+              >A propos</a
+            >
+          </li>
+          <li class="main-header__nav-item">
+            <a href="#contact" class="main-header__nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-header__actions">
+        <!-- Bouton Burger Mobile -->
+        <button
+          class="main-header__burger"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <span></span>
+        </button>
+
+        <!-- Actions Desktop -->
+        <a href="#" class="main-header__action-link"
+          ><img src="./assets/imgs/search.png" alt="Rechercher"
+        /></a>
+        <a href="#" class="main-header__action-link"
+          ><img src="./assets/imgs/cart-icon.png" alt="Panier"
+        /></a>
+        <a href="#" class="main-header__login-btn btn btn--secondary"
+          >Connexion</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- SECTION HERO -->
+      <section class="hero" id="hero">
+        <div class="hero-image__container">
+          <figure class="hero__figure">
+            <img
+              class="hero__image"
+              src="./assets/imgs/produit.png"
+              alt="Ordinateur portable affichant un écran coloré"
+              priority
+            />
+          </figure>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero__title">Shop smart, live better!</h1>
+          <p class="hero__description">
+            Bienvenue sur le site officiel de Magnetic. Découvrez la technologie
+            de demain, aujourd'hui.
+          </p>
+          <div class="hero__actions">
+            <a href="#produits" class="btn btn--primary"
+              >Explorer nos produits</a
+            >
+            <a href="#" class="btn btn--secondary">S'inscrire</a>
+          </div>
+
+          <ul class="info-list">
+            <li class="info-list__item">
+              <p class="info-list__title">Produits</p>
+              <span class="info-list__value">+50</span>
+            </li>
+            <li class="info-list__item">
+              <p class="info-list__title">Ventes</p>
+              <span class="info-list__value">+620k</span>
+            </li>
+            <li class="info-list__item">
+              <p class="info-list__title">Clients</p>
+              <span class="info-list__value">+380k</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION PRODUITS RECENTS -->
+      <section id="produits" class="products-section">
+        <h2 class="products-section__title">Nos nouveautés</h2>
+        <div class="products-section__grid">
+          <article class="product-card">
+            <div class="product-card__image-container">
+              <img
+                class="product-card__image"
+                src="./assets/imgs/legion Go.png"
+                alt="Lenovo Legion Go"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Lenovo Legion Go 2</h3>
+              <p class="product-card__price">$523</p>
+            </div>
+            <button class="product-card__button btn btn--secondary">
+              Ajouter
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-container">
+              <img
+                class="product-card__image"
+                src="./assets/imgs/geforce.png"
+                alt="GeForce RTX 50"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">GeForce RTX 50</h3>
+              <p class="product-card__price">$130</p>
+            </div>
+            <button class="product-card__button btn btn--secondary">
+              Ajouter
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-container">
+              <img
+                class="product-card__image"
+                src="./assets/imgs/lenovo bc.jpg"
+                alt="Bague connectée"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Lenovo Smart Ring</h3>
+              <p class="product-card__price">$220</p>
+            </div>
+            <button class="product-card__button btn btn--secondary">
+              Ajouter
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-container">
+              <img
+                class="product-card__image"
+                src="./assets/imgs/bosequiet.png"
+                alt="Casque Bose"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Bose QC 35 II</h3>
+              <p class="product-card__price">$97</p>
+            </div>
+            <button class="product-card__button btn btn--secondary">
+              Ajouter
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!-- SEPARATOR -->
+      <div class="separator">
+        <div class="scrolling-text">
+          <span
+            >Magnetic &nbsp; • &nbsp; Innovation &nbsp; • &nbsp; Future &nbsp; •
+            &nbsp; Tech &nbsp; • &nbsp; Magnetic</span
+          >
+        </div>
+      </div>
+
+      <!-- BEST PRODUCTS -->
+      <section id="best-products" class="best-products">
+        <div class="best-products__container">
+          <div class="best-products__image-container">
+            <img
+              class="best-products__image"
+              src="./assets/imgs/airpods.webp"
+              alt="Écouteurs sans fil"
+              loading="lazy"
+            />
+          </div>
+          <div class="best-products__text">
+            <h2 class="best-products__title">Le son, redéfini.</h2>
+            <p>Découvrez notre best-seller de l'année.</p>
+            <button class="best-products__button btn btn--primary">
+              Découvrir
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPECIAL PROMO -->
+      <section class="promo-section">
+        <h2 class="promo-section__title">Offres du Week-end</h2>
+        <p class="promo-section__description">
+          Profitez de réductions exclusives sur une sélection d'articles.
+        </p>
+
+        <!-- Correction ici : Container simple, pas de grid -->
+        <div class="promo-section__badge-container">
+          <strong class="promo-section__header-badge">-20% EXTRA</strong>
+        </div>
+
+        <div class="promo-section__categories">
+          <button class="active">Tout</button>
+          <button>Audio</button>
+          <button>Gaming</button>
+          <button>Wearables</button>
+        </div>
+
+        <div class="promo-section__grid">
+          <article class="product-card">
+            <span class="product-card__badge">-20%</span>
+            <div class="product-card__image-container">
+              <img
+                class="product-card__image"
+                src="./assets/imgs/sony air.webp"
+                alt="Sony WF-1000XM5"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Sony WF-1000XM5</h3>
+              <p class="product-card__price product-card__price--promo">
+                <del>$117</del> <strong>$94</strong>
+              </p>
+            </div>
+            <button class="product-card__button btn btn--secondary">
+              Ajouter
+            </button>
+          </article>
+
+          <article class="product-card">
+            <span class="product-card__badge">-20%</span>
+            <div class="product-card__image-container">
+              <img
+                class="product-card__image"
+                src="./assets/imgs/clavier.png"
+                alt="Clavier Corsair"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Corsair K70 Max</h3>
+              <p class="product-card__price product-card__price--promo">
+                <del>$240</del> <strong>$192</strong>
+              </p>
+            </div>
+            <button class="product-card__button btn btn--secondary">
+              Ajouter
+            </button>
+          </article>
+
+          <article class="product-card">
+            <span class="product-card__badge">-20%</span>
+            <div class="product-card__image-container">
+              <img
+                class="product-card__image"
+                src="./assets/imgs/Garmin.png"
+                alt="Montre Garmin"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Garmin Fenix 8</h3>
+              <p class="product-card__price product-card__price--promo">
+                <del>$412</del> <strong>$320</strong>
+              </p>
+            </div>
+            <button class="product-card__button btn btn--secondary">
+              Ajouter
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!-- QUALITÉ -->
+      <section class="quality-section" id="quality-section">
+        <div class="quality-section__container">
+          <div class="quality-section__content">
+            <div class="quality-section__header">
+              <h2 class="quality-section__title">Pourquoi nous choisir ?</h2>
+              <p class="quality-section__text">
+                La qualité et la satisfaction client sont au cœur de notre
+                mission.
+              </p>
+            </div>
+
+            <div class="quality-section__body">
+              <div class="quality-section__image-container">
+                <img
+                  class="quality-section__image"
+                  src="./assets/imgs/Technology.png"
+                  alt="Technologie"
+                  loading="lazy"
+                />
+              </div>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <img
+                    class="feature-item__icon"
+                    src="./assets/imgs/community icon.png"
+                    alt=""
+                  />
+                  <div class="feature-item__content">
+                    <h3 class="feature-item__title">Communauté</h3>
+                    <p class="feature-item__text">
+                      Rejoignez plus de 300k passionnés.
+                    </p>
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <img
+                    class="feature-item__icon"
+                    src="./assets/imgs/premium-icon.png"
+                    alt=""
+                  />
+                  <div class="feature-item__content">
+                    <h3 class="feature-item__title">Premium</h3>
+                    <p class="feature-item__text">
+                      Produits certifiés et garantis.
+                    </p>
+                  </div>
+                </li>
+                <!-- Autres features si besoin -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- JOIN US -->
+      <section class="join-section" id="contact">
+        <div class="join-content">
+          <h2 class="join-content__title">
+            Rejoignez le club <br />
+            <span class="join-content__accent"
+              >-30% sur votre 1ère commande</span
+            >
+          </h2>
+          <form action="" class="join-content__form">
+            <input type="email" placeholder="Votre adresse email" required />
+            <button type="submit" class="join-content__btn">S'abonner</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content__flex">
+          <div class="footer-content__about">
+            <div class="logo">Magne<span>tic</span></div>
+            <p class="footer-content__text">
+              Votre destination pour le meilleur de la tech.
+            </p>
+          </div>
+          <div class="footer-content__links">
+            <h3 class="footer-content__links-title">Liens rapides</h3>
+            <ul class="footer-content__list">
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#produits">Produits</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content__copyright">
+          <p>&copy; 2025 Magnetic. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
