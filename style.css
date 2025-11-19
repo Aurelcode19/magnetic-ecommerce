@@ -258,12 +258,15 @@ body {
 /* Stats List */
 .info-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 30px;
+  margin-top: 20px;
+  padding: 0;
 }
 .info-list__item {
   list-style: none;
   text-align: center;
+  min-width: 80px;
 }
 .info-list__value {
   display: block;
@@ -581,6 +584,9 @@ body {
 
 /* === MEDIA QUERIES (Desktop & Tablet) === */
 @media (min-width: 768px) {
+  .info-list {
+    justify-content: flex-start;
+  }
   .hero {
     flex-direction: row;
     text-align: left;

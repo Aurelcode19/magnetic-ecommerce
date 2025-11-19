@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Sélection de la LISTE, pas de la nav entière
   const navList = document.querySelector(".main-header__nav-list");
 
+  const navLinks = document.querySelectorAll(".main-header__nav-link");
+  const header = document.querySelector(".main-header");
+
   if (burgerButton && navList) {
     burgerButton.addEventListener("click", function () {
       // Toggle des classes modificateurs
@@ -16,8 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
       burgerButton.setAttribute("aria-expanded", isExpanded);
     });
   }
-  // Changement de style du header au scroll
-  const header = document.querySelector(".main-header");
+  // Fermeture du menu au clic sur un lien
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      burgerButton.classList.remove("main-header__burger--open");
+      navList.classList.remove("main-header__nav-list--open");
+      burgerButton.setAttribute("aria-expanded", "false");
+    });
+  }); // Changement de style du header au scroll
 
   function handleScroll() {
     if (window.scrollY > 50) {
