@@ -7,8 +7,10 @@
   padding: 0;
 }
 
-img {
+img,
+svg {
   max-width: 100%;
+  height: auto; /* garde le ratio */
   display: block;
 }
 
@@ -38,7 +40,20 @@ img {
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-/* POLICES */
+/* === UTILITAIRES ACCESSIBILITÉ === */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* === POLICES === */
 @font-face {
   font-family: "lexend";
   src: url(./assets/fonts/Lexend-VariableFont_wght.ttf);
@@ -650,13 +665,14 @@ body {
     height: 45px;
     border-radius: 50%; /* Cercle */
     background-color: var(--bg-light); /* Fond gris léger par défaut */
+    color: var(--secondary); /* Couleur par défaut */
     transition: all 0.3s ease;
     padding: 0;
     margin: 0;
     border: none;
     line-height: 0;
   }
-  .main-header__action-link img {
+  .main-header__action-link svg {
     width: 20px;
     height: 20px;
     object-fit: contain;
@@ -666,14 +682,15 @@ body {
     box-shadow: none;
     border-radius: 0;
     transition: transform 0.3s ease;
+    stroke: currentColor; /* Utilise la couleur du texte défini au-dessus */
   }
   .main-header__action-link:hover {
     background-color: var(--primary); /* Fond bleu lors du survol */
+    color: var(--text-light); /* Icône blanche lors du survol */
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
     transform: translateY(-2px);
   }
-  .main-header__action-link:hover img {
-    filter: brightness(0) invert(1); /* Rend l'icône blanche lors du survol */
+  .main-header__action-link:hover svg {
     transform: scale(1.1);
   }
   .main-header__burger {
