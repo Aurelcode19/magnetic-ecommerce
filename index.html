@@ -46,12 +46,38 @@
         </button>
 
         <!-- Actions Desktop -->
-        <a href="#" class="main-header__action-link"
-          ><img src="./assets/imgs/search.webp" alt="Rechercher"
-        /></a>
-        <a href="#" class="main-header__action-link"
-          ><img src="./assets/imgs/cart-icon.webp" alt="Panier"
-        /></a>
+        <a href="#" class="main-header__action-link" aria-label="Rechercher"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </a>
+        <a
+          href="#"
+          class="main-header__action-link"
+          aria-label=" Voir le panier"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M104,216a16,16,0,1,1-16-16A16,16,0,0,1,104,216Zm88-16a16,16,0,1,0,16,16A16,16,0,0,0,192,200ZM239.71,74.14l-25.64,92.28A24.06,24.06,0,0,1,191,184H92.16A24.06,24.06,0,0,1,69,166.42L33.92,40H16a8,8,0,0,1,0-16H40a8,8,0,0,1,7.71,5.86L57.19,64H232a8,8,0,0,1,7.71,10.14ZM221.47,80H61.64l22.81,82.14A8,8,0,0,0,92.16,168H191a8,8,0,0,0,7.71-5.86Z"
+            ></path>
+          </svg>
+        </a>
         <a href="#" class="main-header__login-btn btn btn--secondary"
           >Connexion</a
         >
@@ -67,7 +93,7 @@
               class="hero__image"
               src="./assets/imgs/produit.webp"
               alt="Ordinateur portable affichant un écran coloré"
-              priority
+              fetchpriority="high"
             />
           </figure>
         </div>
@@ -116,7 +142,9 @@
             </div>
             <div class="product-card__content">
               <h3 class="product-card__title">Lenovo Legion Go 2</h3>
-              <p class="product-card__price">$523</p>
+              <p class="product-card__price">
+                <span class="currency">$</span><span class="value">523</span>
+              </p>
             </div>
             <button class="product-card__button btn btn--secondary">
               Ajouter
@@ -134,7 +162,9 @@
             </div>
             <div class="product-card__content">
               <h3 class="product-card__title">GeForce RTX 50</h3>
-              <p class="product-card__price">$130</p>
+              <p class="product-card__price">
+                <span class="currency">$</span><span class="value">130</span>
+              </p>
             </div>
             <button class="product-card__button btn btn--secondary">
               Ajouter
@@ -152,7 +182,9 @@
             </div>
             <div class="product-card__content">
               <h3 class="product-card__title">Lenovo Smart Ring</h3>
-              <p class="product-card__price">$220</p>
+              <p class="product-card__price">
+                <span class="currency">$</span><span class="value">220</span>
+              </p>
             </div>
             <button class="product-card__button btn btn--secondary">
               Ajouter
@@ -170,7 +202,9 @@
             </div>
             <div class="product-card__content">
               <h3 class="product-card__title">Bose QC 35 II</h3>
-              <p class="product-card__price">$97</p>
+              <p class="product-card__price">
+                <span class="currency">$</span><span class="value">97</span>
+              </p>
             </div>
             <button class="product-card__button btn btn--secondary">
               Ajouter
@@ -243,7 +277,14 @@
             <div class="product-card__content">
               <h3 class="product-card__title">Sony WF-1000XM5</h3>
               <p class="product-card__price product-card__price--promo">
-                <del>$117</del> <strong>$94</strong>
+                <del
+                  ><span class="currency">$</span
+                  ><span class="value">117</span></del
+                >
+                <strong
+                  ><span class="currency">$</span
+                  ><span class="value">94</span></strong
+                >
               </p>
             </div>
             <button class="product-card__button btn btn--secondary">
@@ -264,7 +305,14 @@
             <div class="product-card__content">
               <h3 class="product-card__title">Corsair K70 Max</h3>
               <p class="product-card__price product-card__price--promo">
-                <del>$240</del> <strong>$192</strong>
+                <del
+                  ><span class="currency">$</span
+                  ><span class="value">240</span></del
+                >
+                <strong
+                  ><span class="currency">$</span
+                  ><span class="value">192</span></strong
+                >
               </p>
             </div>
             <button class="product-card__button btn btn--secondary">
@@ -285,7 +333,14 @@
             <div class="product-card__content">
               <h3 class="product-card__title">Garmin Fenix 8</h3>
               <p class="product-card__price product-card__price--promo">
-                <del>$412</del> <strong>$320</strong>
+                <del
+                  ><span class="currency">$</span
+                  ><span class="value">412</span></del
+                >
+                <strong
+                  ><span class="currency">$</span
+                  ><span class="value">320</span></strong
+                >
               </p>
             </div>
             <button class="product-card__button btn btn--secondary">
@@ -360,7 +415,15 @@
             >
           </h2>
           <form action="" class="join-content__form">
-            <input type="email" placeholder="Votre adresse email" required />
+            <label for="email-newsletter" class="sr-only"
+              >Entrez votre adresse email</label
+            >
+            <input
+              type="email"
+              id="email-newsletter"
+              placeholder="Votre adresse email"
+              required
+            />
             <button type="submit" class="join-content__btn">S'abonner</button>
           </form>
         </div>
